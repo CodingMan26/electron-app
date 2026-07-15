@@ -48,7 +48,7 @@
         }
       ]
     },
-    "artifactName": "${productName}.${ext}"
+    "artifactName": "${productName}.${ext}",
     "linux": {
       "maintainer": "Umanga Pathak <contact@umangapathak.com.np>",
       "category": "Utility",
