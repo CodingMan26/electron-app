@@ -1,9 +1,9 @@
 {
   "author": {
-    "name": "Umanga Pathak",
-    "email": "contact@umangapathak.com.np"
+    "name": "Michael Freeman",
+    "email": "codingman26@gmail.com"
   },
-  "homepage": "https://github.com/umangapathak999/electron-app",
+  "homepage": "https://github.com/codingman26/electron-app",
   "description": "Electron app creation using React and TypeScript",
   "name": "electron-app-template",
   "private": true,
@@ -37,8 +37,19 @@
       "target": ["dmg", "zip"]
     },
     "win": {
-      "target": ["nsis", "zip"]
+      "forceCodeSigning": false,
+      "signtoolOptions": null,
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
     },
+    "artifactName": "${productName}.${ext}"
+  },
     "linux": {
       "maintainer": "Umanga Pathak <contact@umangapathak.com.np>",
       "category": "Utility",
